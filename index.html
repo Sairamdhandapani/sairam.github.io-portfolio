@@ -1,0 +1,310 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sairam Dhandapani — Climate action, environmental research, programme strategy and partnerships.">
+  <title>Sairam Dhandapani | Climate & Environment</title>
+  <style>
+    :root {
+      --ink: #172b35;
+      --muted: #657780;
+      --green: #287c68;
+      --pale: #edf4f1;
+      --line: #dce6e2;
+      --paper: #fbfcfa;
+      --white: #fff;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 85px; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Inter, "Segoe UI", Arial, sans-serif;
+      line-height: 1.7;
+    }
+    a { color: var(--green); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .topbar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(251,252,250,.96);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(12px);
+    }
+    .nav {
+      max-width: 1120px; margin: auto; padding: 13px 24px;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 20px;
+    }
+    .brand { font-weight: 750; letter-spacing: -.4px; color: var(--ink); }
+    .navlinks { display: flex; flex-wrap: wrap; gap: 19px; font-size: 13px; }
+    .navlinks a { color: var(--muted); font-weight: 600; }
+    .wrap { max-width: 1000px; margin: auto; padding: 0 24px; }
+    .hero {
+      padding: 76px 0 62px;
+      display: grid; grid-template-columns: 1fr 210px;
+      align-items: center; gap: 50px;
+    }
+    .eyebrow {
+      color: var(--green); text-transform: uppercase;
+      letter-spacing: 2px; font-size: 12px; font-weight: 750;
+    }
+    h1 { font-size: clamp(38px, 6vw, 62px); line-height: 1.08; letter-spacing: -2px; margin: 12px 0; }
+    .subtitle { font-size: 18px; color: var(--muted); max-width: 650px; }
+    .intro { max-width: 680px; }
+    .portrait {
+      width: 190px; height: 220px; object-fit: cover;
+      border-radius: 18px; border: 5px solid white;
+      box-shadow: 0 12px 35px rgba(23,43,53,.12);
+    }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 25px; }
+    .btn {
+      display: inline-block; padding: 10px 17px; border-radius: 7px;
+      background: var(--green); color: white; font-weight: 700; font-size: 14px;
+    }
+    .btn.secondary { background: white; color: var(--green); border: 1px solid var(--line); }
+    section { padding: 55px 0; border-top: 1px solid var(--line); }
+    .section-kicker { color: var(--green); text-transform: uppercase; font-size: 11px; font-weight: 800; letter-spacing: 1.8px; }
+    h2 { font-size: 29px; letter-spacing: -.8px; margin: 5px 0 24px; }
+    h3 { font-size: 18px; margin: 0 0 3px; }
+    p { margin-top: 8px; }
+    .muted { color: var(--muted); }
+    .stats { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; margin-top: 28px; }
+    .stat, .card {
+      background: white; border: 1px solid var(--line);
+      border-radius: 11px; padding: 19px;
+    }
+    .stat strong { display: block; color: var(--green); font-size: 25px; line-height: 1.3; }
+    .stat span { color: var(--muted); font-size: 13px; }
+    .timeline { display: grid; gap: 22px; }
+    .role { border-left: 3px solid #b7d5ca; padding: 2px 0 3px 20px; }
+    .role .date { color: var(--muted); font-size: 13px; font-weight: 650; }
+    ul { padding-left: 20px; }
+    li { margin: 6px 0; }
+    .grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 15px; }
+    .card p { margin-bottom: 0; }
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; }
+    .tag { background: var(--pale); color: #356657; padding: 5px 10px; border-radius: 30px; font-size: 12px; }
+    .publication { padding: 13px 0; border-bottom: 1px solid var(--line); }
+    .publication:last-child { border-bottom: 0; }
+    .cv-frame {
+      width: 100%; height: 720px; border: 1px solid var(--line);
+      border-radius: 10px; background: white;
+    }
+    footer { padding: 30px 0 45px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
+    @media (max-width: 700px) {
+      .nav { align-items: flex-start; flex-direction: column; }
+      .navlinks { gap: 12px; }
+      .hero { grid-template-columns: 1fr; padding-top: 45px; gap: 25px; }
+      .portrait { grid-row: 1; width: 145px; height: 165px; }
+      .stats { grid-template-columns: repeat(2,1fr); }
+      .grid { grid-template-columns: 1fr; }
+      .cv-frame { height: 520px; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="topbar">
+  <nav class="nav">
+    <a class="brand" href="#home">SAIRAM DHANDAPANI</a>
+    <div class="navlinks">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#publications">Publications</a>
+      <a href="#education">Education</a>
+      <a href="#cv">CV</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main class="wrap">
+  <section class="hero" id="home" style="border:0">
+    <div class="intro">
+      <div class="eyebrow">Climate · Environment · Strategy</div>
+      <h1>Sairam<br>Dhandapani</h1>
+      <p class="subtitle">Evidence & Analysis | Strategy & Delivery | Climate Programme Portfolio Engagement | Partnerships & MEL</p>
+      <p class="muted">Climate and environmental programme professional with 9+ years of experience turning research, partnerships and technology into practical environmental action.</p>
+      <div class="actions">
+        <a class="btn" href="#experience">Explore my work</a>
+        <a class="btn secondary" href="Sairam%CV.pdf" target="_blank" rel="noopener">View CV ↗</a>
+        <a class="btn secondary" href="mailto:silentsairam@gmail.com">Contact me</a>
+      </div>
+    </div>
+    <img class="portrait" src="SD%20photo.png" alt="Portrait of Sairam Dhandapani">
+  </section>
+
+  <section id="about">
+    <div class="section-kicker">A little about me</div>
+    <h2>Working at the intersection of evidence and impact.</h2>
+    <p>I am a climate and environmental programme professional with experience across programme delivery, multi-stakeholder partnerships, applied research and environmental technology.</p>
+    <p>Currently, I lead coordination of a USD 6M+ multi-donor climate portfolio, engaging research organisations, government stakeholders, foundations, civil-society organisations and private-sector partners. Previously, I coordinated a INR 6 crore multi-state technology programme involving more than 600 IoT sensors across six Indian states.</p>
+    <p>My work spans programme strategy, partnership development, investment and delivery assessment, monitoring, evaluation and learning (MEL), environmental research and translating technical evidence into decision-ready recommendations.</p>
+    <div class="stats">
+      <div class="stat"><strong>USD 6M+</strong><span>Climate portfolio coordinated</span></div>
+      <div class="stat"><strong>30+</strong><span>Organisations engaged</span></div>
+      <div class="stat"><strong>600+</strong><span>IoT sensors in a multi-state programme</span></div>
+      <div class="stat"><strong>INR 6 Cr</strong><span>Technology programme</span></div>
+      <div class="stat"><strong>80+</strong><span>Technology prototypes contributed to</span></div>
+      <div class="stat"><strong>20%</strong><span>Landfill waste reduction in a school initiative</span></div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="section-kicker">Career journey</div>
+    <h2>Professional experience</h2>
+    <div class="timeline">
+      <article class="role">
+        <div class="date">June 2024 – Present</div>
+        <h3>Senior Manager, Climate Action</h3>
+        <strong>AVPN</strong>
+        <ul>
+          <li>Lead coordination of a USD 6M+ multi-donor climate portfolio, engaging 30+ research organisations and cross-sector partners.</li>
+          <li>Develop strategic programme and partnership opportunities, contributing to proposals and funding discussions.</li>
+          <li>Assess programme fit, financial requirements, budget allocation, delivery feasibility, implementation risks and potential impact.</li>
+          <li>Translate research and partner insights into investment propositions and decision-ready recommendations.</li>
+          <li>Develop MEL frameworks, KPIs and outcome-tracking systems.</li>
+        </ul>
+      </article>
+      <article class="role">
+        <div class="date">March 2021 – April 2024</div>
+        <h3>Research Analyst</h3>
+        <strong>Council on Energy, Environment and Water (CEEW)</strong>
+        <ul>
+          <li>Led a INR 6 crore multi-state technology programme deploying 600+ IoT sensors across six Indian states.</li>
+          <li>Coordinated technical teams, implementation partners and government stakeholders.</li>
+          <li>Supported field testing, sensor validation and operational troubleshooting.</li>
+          <li>Contributed to research on pollution gradients, exposure and hyperlocal pollution sources.</li>
+          <li>Worked with municipal agencies on ward-level mapping of air-pollution sources across six cities.</li>
+          <li>Produced policy reports, briefings and presentations for government and other stakeholders.</li>
+        </ul>
+      </article>
+      <article class="role">
+        <div class="date">May 2019 – September 2020</div>
+        <h3>Research Fellow</h3>
+        <strong>National Institute of Technology, Tiruchirappalli</strong>
+        <ul>
+          <li>Developed a real-time image-processing embedded system using FPGA and machine-learning methods.</li>
+          <li>Conducted data analysis and published research.</li>
+        </ul>
+      </article>
+      <article class="role">
+        <div class="date">May 2017 – May 2019</div>
+        <h3>Associate, Solutions (R&D)</h3>
+        <strong>Reap Benefit, Bengaluru</strong>
+        <ul>
+          <li>Contributed to the development and assessment of 80+ IoT and technology prototypes addressing air, water, waste and energy challenges.</li>
+          <li>Supported product development and manufacturing, considering feasibility and implementation requirements.</li>
+          <li>Helped implement a school-level waste-management system that reduced landfill waste by 20% and generated annual savings of more than INR 5 lakh.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="section-kicker">Selected work</div>
+    <h2>Projects & community work</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>Community Mapping Fellowship</h3>
+        <p class="muted">Public Lab for Open Technology & Science, USA · 2019</p>
+        <p>Used open-source mapping and balloon/kite aerial photography with MapKnitter to identify open-dump hotspots and support community clean-up action.</p>
+      </article>
+      <article class="card">
+        <h3>Breathe — DIY Air-Quality Monitoring</h3>
+        <p>A low-cost, real-time air-quality monitoring concept designed to make neighbourhood pollution information accessible to citizens and government.</p>
+        <p><a href="https://bit.ly/2QwKf2K" target="_blank" rel="noopener">Explore project ↗</a></p>
+      </article>
+      <article class="card">
+        <h3>MyLungs — Indoor Air-Quality IoT Indicator</h3>
+        <p>An indoor air-quality device concept using low-cost sensors to indicate particulate matter and VOC gases, with an open-access data platform.</p>
+        <p><a href="https://bit.ly/2ZEx7zs" target="_blank" rel="noopener">Explore project ↗</a></p>
+      </article>
+      <article class="card">
+        <h3>Solve Ninja Techno Kit</h3>
+        <p>A coding-and-electronics kit supporting young people aged 11–18 to build technology-based solutions to community problems, including a household water-use meter.</p>
+        <p><a href="https://bit.ly/2BUafzA" target="_blank" rel="noopener">Explore project ↗</a></p>
+      </article>
+    </div>
+  </section>
+
+  <section id="expertise">
+    <div class="section-kicker">What I work on</div>
+    <h2>Areas of expertise</h2>
+    <div class="tags">
+      <span class="tag">Climate programme strategy</span>
+      <span class="tag">Portfolio coordination</span>
+      <span class="tag">Partnership development</span>
+      <span class="tag">Monitoring, Evaluation & Learning</span>
+      <span class="tag">Environmental monitoring</span>
+      <span class="tag">Air-quality research</span>
+      <span class="tag">IoT systems</span>
+      <span class="tag">Pollution-source mapping</span>
+      <span class="tag">Research synthesis</span>
+      <span class="tag">Policy communication</span>
+      <span class="tag">Citizen science</span>
+      <span class="tag">Embedded systems</span>
+      <span class="tag">Python</span>
+      <span class="tag">R / RStudio</span>
+      <span class="tag">QGIS</span>
+      <span class="tag">MATLAB</span>
+      <span class="tag">Datawrapper</span>
+      <span class="tag">Canva</span>
+      <span class="tag">Figma</span>
+    </div>
+  </section>
+
+  <section id="publications">
+    <div class="section-kicker">Research & writing</div>
+    <h2>Selected publications</h2>
+    <div class="publication"><a href="https://shorturl.at/f9lSD" target="_blank" rel="noopener">How can India Reduce Pollution from Construction Activities?</a></div>
+    <div class="publication"><a href="https://shorturl.at/BQB6M" target="_blank" rel="noopener">Catalysing Local Action for Clean Air — Guidebook</a></div>
+    <div class="publication"><a href="https://www.mdpi.com/2073-4433/12/6/784" target="_blank" rel="noopener">Black Carbon Source Apportionment, Klang Valley, Malaysia — Atmosphere (MDPI), 2021</a></div>
+    <div class="publication"><a href="https://doi.org/10.1007/s40012-020-00305-4" target="_blank" rel="noopener">Real-time Embedded System for Angular Position Acquisition — CSI Transactions on ICT, 2020</a></div>
+  </section>
+
+  <section id="education">
+    <div class="section-kicker">Academic background</div>
+    <h2>Education</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>M.E., Embedded System Technologies</h3>
+        <p class="muted">Anna University, India · 2013–2015</p>
+      </div>
+      <div class="card">
+        <h3>B.E., Electrical & Electronics Engineering</h3>
+        <p class="muted">Anna University, India · 2009–2013</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="cv">
+    <div class="section-kicker">Full professional profile</div>
+    <h2>View my CV</h2>
+    <p class="muted">Read my complete curriculum vitae below, or <a href="Sairam%CV.pdf" target="_blank" rel="noopener">open the PDF in a new tab ↗</a>.</p>
+    <iframe class="cv-frame" src="Sairam%CV.pdf" title="Sairam Dhandapani CV PDF"></iframe>
+  </section>
+
+  <section id="contact">
+    <div class="section-kicker">Get in touch</div>
+    <h2>Let's connect.</h2>
+    <p>I'm interested in conversations around climate action, environmental research, programme strategy, partnerships and technology-enabled solutions for sustainable development.</p>
+    <div class="actions">
+      <a class="btn" href="mailto:silentsairam@gmail.com">Email me</a>
+      <a class="btn secondary" href="https://github.com/sairamdhandapani" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© <span id="year"></span> Sairam Dhandapani · Climate Action & Environmental Research</div>
+</footer>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
