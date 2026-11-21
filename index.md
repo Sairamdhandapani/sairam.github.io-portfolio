@@ -2,7 +2,7 @@
 title: Sairam Dhandapani
 ---
 
-![Sairam Dhandapani](profile.jpg)
+![Sairam Dhandapani](SDphoto.png)
 
 # Sairam Dhandapani
 
